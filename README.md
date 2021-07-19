@@ -19,6 +19,7 @@ Stay Tuned...
 - Add More Triggers For Notifications
 - Calendar And Reminder Themes
 - Search Events And Reminders
+- macOS App
 
 # Images
 
