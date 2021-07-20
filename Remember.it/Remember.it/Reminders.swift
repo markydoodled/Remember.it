@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct Reminders: View {
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if horizontalSizeClass == .compact {
+            NavigationView {
+                Text("Test")
+                    .navigationTitle("Reminders")
+            }
+        } else {
+            Text("Test")
+                .navigationTitle("Reminders")
+        }
     }
 }
 

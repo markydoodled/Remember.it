@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct Calendar: View {
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @State var activeSheet: ActiveSheet?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if horizontalSizeClass == .compact {
+            NavigationView {
+                Text("Test")
+                    .navigationTitle("Calendar")
+            }
+        } else {
+            Text("Test")
+                .navigationTitle("Calendar")
     }
+}
 }
 
 struct Calendar_Previews: PreviewProvider {
     static var previews: some View {
         Calendar()
+    }
+}
+
+enum ActiveSheet: Identifiable {
+    case theme, add
+    
+    var id: Int {
+        hashValue
     }
 }

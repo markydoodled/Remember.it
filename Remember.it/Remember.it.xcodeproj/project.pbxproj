@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D501620126A603C400F897B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D501620026A603C400F897B8 /* Settings.bundle */; };
 		D59200B226A5E23300AE5928 /* Remember_itApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59200B126A5E23300AE5928 /* Remember_itApp.swift */; };
 		D59200B426A5E23300AE5928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59200B326A5E23300AE5928 /* ContentView.swift */; };
 		D59200B626A5E23900AE5928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59200B526A5E23900AE5928 /* Assets.xcassets */; };
 		D59200B926A5E23900AE5928 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59200B826A5E23900AE5928 /* Preview Assets.xcassets */; };
+		D59200C126A5E2D700AE5928 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59200C026A5E2D700AE5928 /* Calendar.swift */; };
+		D59200C326A5E2E200AE5928 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59200C226A5E2E200AE5928 /* Reminders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D501620026A603C400F897B8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		D59200AE26A5E23300AE5928 /* Remember.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remember.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59200B126A5E23300AE5928 /* Remember_itApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remember_itApp.swift; sourceTree = "<group>"; };
 		D59200B326A5E23300AE5928 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D59200B526A5E23900AE5928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D59200B826A5E23900AE5928 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D59200BA26A5E23900AE5928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D59200C026A5E2D700AE5928 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		D59200C226A5E2E200AE5928 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				D59200B526A5E23900AE5928 /* Assets.xcassets */,
 				D59200BA26A5E23900AE5928 /* Info.plist */,
 				D59200B726A5E23900AE5928 /* Preview Content */,
+				D59200C026A5E2D700AE5928 /* Calendar.swift */,
+				D59200C226A5E2E200AE5928 /* Reminders.swift */,
+				D501620026A603C400F897B8 /* Settings.bundle */,
 			);
 			path = Remember.it;
 			sourceTree = "<group>";
@@ -85,6 +94,8 @@
 			dependencies = (
 			);
 			name = Remember.it;
+			packageProductDependencies = (
+			);
 			productName = Remember.it;
 			productReference = D59200AE26A5E23300AE5928 /* Remember.it.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +123,8 @@
 				Base,
 			);
 			mainGroup = D59200A526A5E23300AE5928;
+			packageReferences = (
+			);
 			productRefGroup = D59200AF26A5E23300AE5928 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59200B926A5E23900AE5928 /* Preview Assets.xcassets in Resources */,
+				D501620126A603C400F897B8 /* Settings.bundle in Resources */,
 				D59200B626A5E23900AE5928 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59200B426A5E23300AE5928 /* ContentView.swift in Sources */,
+				D59200C126A5E2D700AE5928 /* Calendar.swift in Sources */,
 				D59200B226A5E23300AE5928 /* Remember_itApp.swift in Sources */,
+				D59200C326A5E2E200AE5928 /* Reminders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
