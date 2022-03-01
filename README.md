@@ -5,7 +5,7 @@ This Is A Light SwiftUI App That Acts As A Calendar Event Creator And Reader And
 
 ## **Releases**
 
-Stay Tuned...
+[Click Here...](https://github.com/markydoodled/Remember.it/releases)
 
 ## **Features**
 
@@ -14,15 +14,15 @@ Stay Tuned...
 - Add Date And Time Triggers
 - Reminders With Priority Levels
 - Auto Write To Default Reminder List
+- macOS App
 
 ## **Features To Be Implemented**
 
-- Search Events And Reminders
-- macOS App
+Any Suggestions...
 
 ## **Images**
 
-Stay Tuned...
+[Click Here...](https://github.com/markydoodled/Remember.it/tree/main/Images)
 
 ## **Things To Note**
 

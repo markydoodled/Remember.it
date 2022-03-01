@@ -8,8 +8,11 @@
 import SwiftUI
 import EventKit
 import Combine
+import MessageUI
 
 struct ContentView: View {
+    @State var result: Result<MFMailComposeResult, Error>? = nil
+    @State var isShowingMailView = false
     enum ActiveSheet {
         case calendarChooser
         case calendarEdit
@@ -35,12 +38,22 @@ struct ContentView: View {
             HStack {
                 Text("Version")
                 Spacer()
-                Text("1.0")
+                Text("1.1")
             }
             HStack {
                 Text("Build")
                 Spacer()
-                Text("1")
+                Text("2")
+            }
+            HStack {
+                Text("Feedback: ")
+                Spacer()
+                Button(action: {self.isShowingMailView.toggle()}) {
+                    Text("Send Some Feedback")
+                }
+                .sheet(isPresented: $isShowingMailView) {
+                    MailView(isShowing: self.$isShowingMailView, result: self.$result)
+                }
             }
         }
     }
@@ -224,5 +237,52 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct MailView: UIViewControllerRepresentable {
+
+    @Binding var isShowing: Bool
+    @Binding var result: Result<MFMailComposeResult, Error>?
+
+    class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
+
+        @Binding var isShowing: Bool
+        @Binding var result: Result<MFMailComposeResult, Error>?
+
+        init(isShowing: Binding<Bool>,
+             result: Binding<Result<MFMailComposeResult, Error>?>) {
+            _isShowing = isShowing
+            _result = result
+        }
+
+        func mailComposeController(_ controller: MFMailComposeViewController,
+                                   didFinishWith result: MFMailComposeResult,
+                                   error: Error?) {
+            defer {
+                isShowing = false
+            }
+            guard error == nil else {
+                self.result = .failure(error!)
+                return
+            }
+            self.result = .success(result)
+        }
+    }
+
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(isShowing: $isShowing,
+                           result: $result)
+    }
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
+        let vc = MFMailComposeViewController()
+        vc.mailComposeDelegate = context.coordinator
+        return vc
+    }
+
+    func updateUIViewController(_ uiViewController: MFMailComposeViewController,
+                                context: UIViewControllerRepresentableContext<MailView>) {
+
     }
 }
