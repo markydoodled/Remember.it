@@ -3,53 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D58721F127B02D8500955B18 /* CalendarChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721F027B02D8500955B18 /* CalendarChooser.swift */; };
-		D58721F327B02D9400955B18 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721F227B02D9400955B18 /* Notifications.swift */; };
-		D58721F527B02DA200955B18 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721F427B02DA200955B18 /* PrimaryButtonStyle.swift */; };
-		D58721F727B02DB100955B18 /* EKCalendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721F627B02DB100955B18 /* EKCalendar+Extension.swift */; };
-		D58721F927B02DBF00955B18 /* EXEvent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721F827B02DBF00955B18 /* EXEvent+Extension.swift */; };
-		D58721FB27B02DCD00955B18 /* EventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721FA27B02DCD00955B18 /* EventEditView.swift */; };
-		D58721FD27B02DD900955B18 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721FC27B02DD900955B18 /* EventRow.swift */; };
-		D58721FF27B02DE900955B18 /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58721FE27B02DE900955B18 /* EventsRepository.swift */; };
-		D587220127B02DFC00955B18 /* SecondaryCapitonTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D587220027B02DFC00955B18 /* SecondaryCapitonTextStyle.swift */; };
-		D587220327B02E0C00955B18 /* SelectedCalendarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D587220227B02E0C00955B18 /* SelectedCalendarList.swift */; };
-		D587220527B02E1D00955B18 /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D587220427B02E1D00955B18 /* TimeInterval+Extension.swift */; };
-		D587220727B05A4E00955B18 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D587220627B05A4E00955B18 /* Settings.bundle */; };
-		D587220A27B180DB00955B18 /* RemindersSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D587220927B180DB00955B18 /* RemindersSync.swift */; };
-		D5B24D7727A9CA62006CCCF9 /* Remember_itApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B24D7627A9CA62006CCCF9 /* Remember_itApp.swift */; };
-		D5B24D7927A9CA62006CCCF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B24D7827A9CA62006CCCF9 /* ContentView.swift */; };
-		D5B24D7B27A9CA66006CCCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B24D7A27A9CA66006CCCF9 /* Assets.xcassets */; };
-		D5B24D7E27A9CA66006CCCF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B24D7D27A9CA66006CCCF9 /* Preview Assets.xcassets */; };
+		D51E7577296B561000CC2187 /* Remember_itApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7576296B561000CC2187 /* Remember_itApp.swift */; };
+		D51E7579296B561000CC2187 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7578296B561000CC2187 /* ContentView.swift */; };
+		D51E757B296B561200CC2187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51E757A296B561200CC2187 /* Assets.xcassets */; };
+		D51E757E296B561200CC2187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51E757D296B561200CC2187 /* Preview Assets.xcassets */; };
+		D51E7586296B57CB00CC2187 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D51E7585296B57CB00CC2187 /* Settings.bundle */; };
+		D54A52362971CA82006855FF /* RemindersSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52352971CA82006855FF /* RemindersSync.swift */; };
+		D54A52382971D010006855FF /* CalendarChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52372971D010006855FF /* CalendarChooser.swift */; };
+		D54A523A2971D226006855FF /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52392971D226006855FF /* Notifications.swift */; };
+		D54A523C2971D24F006855FF /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A523B2971D24F006855FF /* PrimaryButtonStyle.swift */; };
+		D54A523E2971D2B4006855FF /* EKCalendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A523D2971D2B4006855FF /* EKCalendar+Extension.swift */; };
+		D54A52402971D354006855FF /* EKEvent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A523F2971D354006855FF /* EKEvent+Extension.swift */; };
+		D54A52422971D40D006855FF /* EventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52412971D40D006855FF /* EventEditView.swift */; };
+		D54A52442971D462006855FF /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52432971D462006855FF /* EventRow.swift */; };
+		D54A52462971D5B8006855FF /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52452971D5B8006855FF /* EventsRepository.swift */; };
+		D54A52482971D7BC006855FF /* SecondaryCaptionTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52472971D7BC006855FF /* SecondaryCaptionTextStyle.swift */; };
+		D54A524A2971D873006855FF /* SelectedCalendarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A52492971D873006855FF /* SelectedCalendarList.swift */; };
+		D54A524C2971DD59006855FF /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A524B2971DD59006855FF /* TimeInterval+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D58721F027B02D8500955B18 /* CalendarChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarChooser.swift; sourceTree = "<group>"; };
-		D58721F227B02D9400955B18 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		D58721F427B02DA200955B18 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
-		D58721F627B02DB100955B18 /* EKCalendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKCalendar+Extension.swift"; sourceTree = "<group>"; };
-		D58721F827B02DBF00955B18 /* EXEvent+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EXEvent+Extension.swift"; sourceTree = "<group>"; };
-		D58721FA27B02DCD00955B18 /* EventEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditView.swift; sourceTree = "<group>"; };
-		D58721FC27B02DD900955B18 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
-		D58721FE27B02DE900955B18 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
-		D587220027B02DFC00955B18 /* SecondaryCapitonTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCapitonTextStyle.swift; sourceTree = "<group>"; };
-		D587220227B02E0C00955B18 /* SelectedCalendarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCalendarList.swift; sourceTree = "<group>"; };
-		D587220427B02E1D00955B18 /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
-		D587220627B05A4E00955B18 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		D587220927B180DB00955B18 /* RemindersSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersSync.swift; sourceTree = "<group>"; };
-		D59F157627CD6E24002D1540 /* Remember.it iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Remember.it iOS.entitlements"; sourceTree = "<group>"; };
-		D5B24D7327A9CA62006CCCF9 /* Remember.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remember.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5B24D7627A9CA62006CCCF9 /* Remember_itApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remember_itApp.swift; sourceTree = "<group>"; };
-		D5B24D7827A9CA62006CCCF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D5B24D7A27A9CA66006CCCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5B24D7D27A9CA66006CCCF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D51E7573296B561000CC2187 /* Remember.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remember.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51E7576296B561000CC2187 /* Remember_itApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remember_itApp.swift; sourceTree = "<group>"; };
+		D51E7578296B561000CC2187 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D51E757A296B561200CC2187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D51E757D296B561200CC2187 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D51E7584296B566A00CC2187 /* Remember.it.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Remember.it.entitlements; sourceTree = "<group>"; };
+		D51E7585296B57CB00CC2187 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D54A52352971CA82006855FF /* RemindersSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersSync.swift; sourceTree = "<group>"; };
+		D54A52372971D010006855FF /* CalendarChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarChooser.swift; sourceTree = "<group>"; };
+		D54A52392971D226006855FF /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		D54A523B2971D24F006855FF /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		D54A523D2971D2B4006855FF /* EKCalendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKCalendar+Extension.swift"; sourceTree = "<group>"; };
+		D54A523F2971D354006855FF /* EKEvent+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEvent+Extension.swift"; sourceTree = "<group>"; };
+		D54A52412971D40D006855FF /* EventEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditView.swift; sourceTree = "<group>"; };
+		D54A52432971D462006855FF /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		D54A52452971D5B8006855FF /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
+		D54A52472971D7BC006855FF /* SecondaryCaptionTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCaptionTextStyle.swift; sourceTree = "<group>"; };
+		D54A52492971D873006855FF /* SelectedCalendarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCalendarList.swift; sourceTree = "<group>"; };
+		D54A524B2971DD59006855FF /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		D54A524D2971E17E006855FF /* Remember-it-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Remember-it-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D5B24D7027A9CA62006CCCF9 /* Frameworks */ = {
+		D51E7570296B561000CC2187 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,174 +60,170 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D58721E727B02B4D00955B18 /* Calendar */ = {
+		D51E756A296B561000CC2187 = {
 			isa = PBXGroup;
 			children = (
-				D58721F027B02D8500955B18 /* CalendarChooser.swift */,
-				D58721F227B02D9400955B18 /* Notifications.swift */,
-				D58721F427B02DA200955B18 /* PrimaryButtonStyle.swift */,
-				D58721F627B02DB100955B18 /* EKCalendar+Extension.swift */,
-				D58721F827B02DBF00955B18 /* EXEvent+Extension.swift */,
-				D58721FA27B02DCD00955B18 /* EventEditView.swift */,
-				D58721FC27B02DD900955B18 /* EventRow.swift */,
-				D58721FE27B02DE900955B18 /* EventsRepository.swift */,
-				D587220027B02DFC00955B18 /* SecondaryCapitonTextStyle.swift */,
-				D587220227B02E0C00955B18 /* SelectedCalendarList.swift */,
-				D587220427B02E1D00955B18 /* TimeInterval+Extension.swift */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
-		D587220827B180C800955B18 /* Reminders */ = {
-			isa = PBXGroup;
-			children = (
-				D587220927B180DB00955B18 /* RemindersSync.swift */,
-			);
-			path = Reminders;
-			sourceTree = "<group>";
-		};
-		D5B24D6A27A9CA62006CCCF9 = {
-			isa = PBXGroup;
-			children = (
-				D5B24D7527A9CA62006CCCF9 /* Remember.it iOS */,
-				D5B24D7427A9CA62006CCCF9 /* Products */,
+				D51E7575296B561000CC2187 /* Remember.it */,
+				D51E7574296B561000CC2187 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D5B24D7427A9CA62006CCCF9 /* Products */ = {
+		D51E7574296B561000CC2187 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5B24D7327A9CA62006CCCF9 /* Remember.it.app */,
+				D51E7573296B561000CC2187 /* Remember.it.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5B24D7527A9CA62006CCCF9 /* Remember.it iOS */ = {
+		D51E7575296B561000CC2187 /* Remember.it */ = {
 			isa = PBXGroup;
 			children = (
-				D59F157627CD6E24002D1540 /* Remember.it iOS.entitlements */,
-				D587220827B180C800955B18 /* Reminders */,
-				D58721E727B02B4D00955B18 /* Calendar */,
-				D5B24D7627A9CA62006CCCF9 /* Remember_itApp.swift */,
-				D5B24D7827A9CA62006CCCF9 /* ContentView.swift */,
-				D5B24D7A27A9CA66006CCCF9 /* Assets.xcassets */,
-				D5B24D7C27A9CA66006CCCF9 /* Preview Content */,
-				D587220627B05A4E00955B18 /* Settings.bundle */,
+				D54A524D2971E17E006855FF /* Remember-it-Info.plist */,
+				D51E7588296B5A8B00CC2187 /* Calendar */,
+				D51E7587296B5A8100CC2187 /* Reminders */,
+				D51E7584296B566A00CC2187 /* Remember.it.entitlements */,
+				D51E7576296B561000CC2187 /* Remember_itApp.swift */,
+				D51E7578296B561000CC2187 /* ContentView.swift */,
+				D51E757A296B561200CC2187 /* Assets.xcassets */,
+				D51E757C296B561200CC2187 /* Preview Content */,
+				D51E7585296B57CB00CC2187 /* Settings.bundle */,
 			);
-			path = "Remember.it iOS";
+			path = Remember.it;
 			sourceTree = "<group>";
 		};
-		D5B24D7C27A9CA66006CCCF9 /* Preview Content */ = {
+		D51E757C296B561200CC2187 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D5B24D7D27A9CA66006CCCF9 /* Preview Assets.xcassets */,
+				D51E757D296B561200CC2187 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D51E7587296B5A8100CC2187 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				D54A52352971CA82006855FF /* RemindersSync.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		D51E7588296B5A8B00CC2187 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				D54A52372971D010006855FF /* CalendarChooser.swift */,
+				D54A52392971D226006855FF /* Notifications.swift */,
+				D54A523B2971D24F006855FF /* PrimaryButtonStyle.swift */,
+				D54A523D2971D2B4006855FF /* EKCalendar+Extension.swift */,
+				D54A523F2971D354006855FF /* EKEvent+Extension.swift */,
+				D54A52412971D40D006855FF /* EventEditView.swift */,
+				D54A52432971D462006855FF /* EventRow.swift */,
+				D54A52452971D5B8006855FF /* EventsRepository.swift */,
+				D54A52472971D7BC006855FF /* SecondaryCaptionTextStyle.swift */,
+				D54A52492971D873006855FF /* SelectedCalendarList.swift */,
+				D54A524B2971DD59006855FF /* TimeInterval+Extension.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5B24D7227A9CA62006CCCF9 /* Remember.it iOS */ = {
+		D51E7572296B561000CC2187 /* Remember.it */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5B24D8127A9CA66006CCCF9 /* Build configuration list for PBXNativeTarget "Remember.it iOS" */;
+			buildConfigurationList = D51E7581296B561200CC2187 /* Build configuration list for PBXNativeTarget "Remember.it" */;
 			buildPhases = (
-				D5B24D6F27A9CA62006CCCF9 /* Sources */,
-				D5B24D7027A9CA62006CCCF9 /* Frameworks */,
-				D5B24D7127A9CA62006CCCF9 /* Resources */,
+				D51E756F296B561000CC2187 /* Sources */,
+				D51E7570296B561000CC2187 /* Frameworks */,
+				D51E7571296B561000CC2187 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Remember.it iOS";
-			packageProductDependencies = (
-			);
+			name = Remember.it;
 			productName = Remember.it;
-			productReference = D5B24D7327A9CA62006CCCF9 /* Remember.it.app */;
+			productReference = D51E7573296B561000CC2187 /* Remember.it.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D5B24D6B27A9CA62006CCCF9 /* Project object */ = {
+		D51E756B296B561000CC2187 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					D5B24D7227A9CA62006CCCF9 = {
-						CreatedOnToolsVersion = 13.1;
+					D51E7572296B561000CC2187 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = D5B24D6E27A9CA62006CCCF9 /* Build configuration list for PBXProject "Remember.it" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = D51E756E296B561000CC2187 /* Build configuration list for PBXProject "Remember.it" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D5B24D6A27A9CA62006CCCF9;
-			packageReferences = (
-			);
-			productRefGroup = D5B24D7427A9CA62006CCCF9 /* Products */;
+			mainGroup = D51E756A296B561000CC2187;
+			productRefGroup = D51E7574296B561000CC2187 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5B24D7227A9CA62006CCCF9 /* Remember.it iOS */,
+				D51E7572296B561000CC2187 /* Remember.it */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D5B24D7127A9CA62006CCCF9 /* Resources */ = {
+		D51E7571296B561000CC2187 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B24D7E27A9CA66006CCCF9 /* Preview Assets.xcassets in Resources */,
-				D587220727B05A4E00955B18 /* Settings.bundle in Resources */,
-				D5B24D7B27A9CA66006CCCF9 /* Assets.xcassets in Resources */,
+				D51E757E296B561200CC2187 /* Preview Assets.xcassets in Resources */,
+				D51E7586296B57CB00CC2187 /* Settings.bundle in Resources */,
+				D51E757B296B561200CC2187 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D5B24D6F27A9CA62006CCCF9 /* Sources */ = {
+		D51E756F296B561000CC2187 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58721FF27B02DE900955B18 /* EventsRepository.swift in Sources */,
-				D58721F327B02D9400955B18 /* Notifications.swift in Sources */,
-				D587220127B02DFC00955B18 /* SecondaryCapitonTextStyle.swift in Sources */,
-				D58721FD27B02DD900955B18 /* EventRow.swift in Sources */,
-				D587220A27B180DB00955B18 /* RemindersSync.swift in Sources */,
-				D58721FB27B02DCD00955B18 /* EventEditView.swift in Sources */,
-				D58721F927B02DBF00955B18 /* EXEvent+Extension.swift in Sources */,
-				D58721F527B02DA200955B18 /* PrimaryButtonStyle.swift in Sources */,
-				D5B24D7927A9CA62006CCCF9 /* ContentView.swift in Sources */,
-				D587220327B02E0C00955B18 /* SelectedCalendarList.swift in Sources */,
-				D5B24D7727A9CA62006CCCF9 /* Remember_itApp.swift in Sources */,
-				D58721F127B02D8500955B18 /* CalendarChooser.swift in Sources */,
-				D58721F727B02DB100955B18 /* EKCalendar+Extension.swift in Sources */,
-				D587220527B02E1D00955B18 /* TimeInterval+Extension.swift in Sources */,
+				D54A524A2971D873006855FF /* SelectedCalendarList.swift in Sources */,
+				D54A52422971D40D006855FF /* EventEditView.swift in Sources */,
+				D54A523C2971D24F006855FF /* PrimaryButtonStyle.swift in Sources */,
+				D54A523A2971D226006855FF /* Notifications.swift in Sources */,
+				D51E7579296B561000CC2187 /* ContentView.swift in Sources */,
+				D54A52382971D010006855FF /* CalendarChooser.swift in Sources */,
+				D54A52402971D354006855FF /* EKEvent+Extension.swift in Sources */,
+				D54A52362971CA82006855FF /* RemindersSync.swift in Sources */,
+				D54A52442971D462006855FF /* EventRow.swift in Sources */,
+				D51E7577296B561000CC2187 /* Remember_itApp.swift in Sources */,
+				D54A523E2971D2B4006855FF /* EKCalendar+Extension.swift in Sources */,
+				D54A52482971D7BC006855FF /* SecondaryCaptionTextStyle.swift in Sources */,
+				D54A52462971D5B8006855FF /* EventsRepository.swift in Sources */,
+				D54A524C2971DD59006855FF /* TimeInterval+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D5B24D7F27A9CA66006CCCF9 /* Debug */ = {
+		D51E757F296B561200CC2187 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -270,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -280,14 +277,13 @@
 			};
 			name = Debug;
 		};
-		D5B24D8027A9CA66006CCCF9 /* Release */ = {
+		D51E7580296B561200CC2187 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -325,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -335,20 +331,20 @@
 			};
 			name = Release;
 		};
-		D5B24D8227A9CA66006CCCF9 /* Debug */ = {
+		D51E7582296B561200CC2187 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Remember.it iOS/Remember.it iOS.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = Remember.it/Remember.it.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Remember.it iOS/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Remember.it/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
-				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Remember-it-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Remember.it;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "To Use Calendars In This App, You Must Allow Access To Calendar Data.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "To Add Invitees To Calendar Events, You Must Allow Access To Contacts Data.";
@@ -356,37 +352,39 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Remember-it";
-				PRODUCT_NAME = Remember.it;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D5B24D8327A9CA66006CCCF9 /* Release */ = {
+		D51E7583296B561200CC2187 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Remember.it iOS/Remember.it iOS.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = Remember.it/Remember.it.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Remember.it iOS/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Remember.it/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
-				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Remember-it-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Remember.it;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "To Use Calendars In This App, You Must Allow Access To Calendar Data.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "To Add Invitees To Calendar Events, You Must Allow Access To Contacts Data.";
@@ -394,17 +392,19 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Remember-it";
-				PRODUCT_NAME = Remember.it;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,25 +414,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5B24D6E27A9CA62006CCCF9 /* Build configuration list for PBXProject "Remember.it" */ = {
+		D51E756E296B561000CC2187 /* Build configuration list for PBXProject "Remember.it" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5B24D7F27A9CA66006CCCF9 /* Debug */,
-				D5B24D8027A9CA66006CCCF9 /* Release */,
+				D51E757F296B561200CC2187 /* Debug */,
+				D51E7580296B561200CC2187 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5B24D8127A9CA66006CCCF9 /* Build configuration list for PBXNativeTarget "Remember.it iOS" */ = {
+		D51E7581296B561200CC2187 /* Build configuration list for PBXNativeTarget "Remember.it" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5B24D8227A9CA66006CCCF9 /* Debug */,
-				D5B24D8327A9CA66006CCCF9 /* Release */,
+				D51E7582296B561200CC2187 /* Debug */,
+				D51E7583296B561200CC2187 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D5B24D6B27A9CA62006CCCF9 /* Project object */;
+	rootObject = D51E756B296B561000CC2187 /* Project object */;
 }

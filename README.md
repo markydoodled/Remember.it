@@ -1,11 +1,6 @@
 # Remember.it
-**About**
 
 This Is A Light SwiftUI App That Acts As A Calendar Event Creator And Reader And Reminder Creator App. This Combines Two Apps Into One And Keeps All Your Important Events In One Place.
-
-## **Releases**
-
-[Click Here...](https://github.com/markydoodled/Remember.it/releases)
 
 ## **Features**
 
@@ -15,14 +10,6 @@ This Is A Light SwiftUI App That Acts As A Calendar Event Creator And Reader And
 - Reminders With Priority Levels
 - Auto Write To Default Reminder List
 - macOS App
-
-## **Features To Be Implemented**
-
-Any Suggestions...
-
-## **Images**
-
-[Click Here...](https://github.com/markydoodled/Remember.it/tree/main/Images)
 
 ## **Things To Note**
 
