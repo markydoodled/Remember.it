@@ -4,12 +4,13 @@ This Is A Light SwiftUI App That Acts As A Calendar Event Creator And Reader And
 
 ## **Features**
 
+- macOS App
+- iOS App
 - Create Reminders
 - Create Calendar Events
 - Add Date And Time Triggers
 - Reminders With Priority Levels
 - Auto Write To Default Reminder List
-- macOS App
 
 ## **Things To Note**
 
