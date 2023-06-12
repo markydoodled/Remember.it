@@ -35,8 +35,6 @@ struct EventRow: View {
             Circle()
                 .fill(event.color)
                 .frame(width: 10, height: 10, alignment: .center)
-                
-            
             VStack(alignment: .leading) {
                 Text(EventRow.relativeDateFormatter.localizedString(for: event.startDate, relativeTo: Date()).uppercased())
                     .modifier(SecondaryCaptionTextStyle())
@@ -44,14 +42,13 @@ struct EventRow: View {
                 Text(event.title)
                     .font(.headline)
             }
-            
             Spacer()
-            
             VStack {
                 Spacer()
-                Text(event.isAllDay ? "all day" : EventRow.formatDate(forNonAllDayEvent: event))
+                Text(event.isAllDay ? "All Day" : EventRow.formatDate(forNonAllDayEvent: event))
                     .modifier(SecondaryCaptionTextStyle())
             }
-        }.padding(.vertical, 5)
+        }
+        .padding(.vertical, 5)
     }
 }

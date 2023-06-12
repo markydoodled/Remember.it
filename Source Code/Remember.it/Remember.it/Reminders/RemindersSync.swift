@@ -23,7 +23,7 @@ class RemindersSync {
     func requestRemindersAccess(completion: @escaping (Bool) -> Void) {
       eventStore.requestAccess(to: .reminder) { (granted, error) in
         if let error = error {
-          print("EKEventStore request access completed with error: \(error.localizedDescription)")
+          print("EKEventStore Request Access Completed With Error: \(error.localizedDescription)")
           completion(granted)
           return
         }
@@ -62,20 +62,14 @@ class RemindersSync {
     }
     
     //Create Reminder
-    func createReminder(title: String, priority: Int, notes: String, date: DateComponents) {
+    func createReminder(title: String, priority: Int, notes: String, date: DateComponents, url: String) {
         let reminder = EKReminder(eventStore: eventStore)
         reminder.title = title
         reminder.notes = notes
         reminder.priority = priority
         reminder.dueDateComponents = date
-        //reminder.calendar = remindersCalendar
+        reminder.url = URL(string: url)
         reminder.calendar = eventStore.defaultCalendarForNewReminders()
-    
-        //Create A Completed Task
-        //reminder.isCompleted = false
-    
-        //Set A Task Deadline
-        //reminder.dueDateComponents = DateComponents()
     
         do {
             try eventStore.save(reminder, commit: true)

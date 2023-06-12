@@ -36,7 +36,8 @@ class EventsRepository: ObservableObject {
         $selectedCalendars.sink { [weak self] (calendars) in
             self?.saveSelectedCalendars(calendars)
             self?.loadAndUpdateEvents()
-        }.store(in: &subscribers)
+        }
+        .store(in: &subscribers)
         
         NotificationCenter.default.publisher(for: .eventsDidChange)
             .sink { [weak self] (notification) in

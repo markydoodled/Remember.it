@@ -47,6 +47,8 @@ struct ContentView: View {
     @State var reminderPriority = 0
     //Init Reminder Notes
     @State var reminderNotes = ""
+    //Init Reminder URL
+    @State var reminderURL = ""
     //Init Reminder Due Date
     @State var reminderDate = Date()
     //Init Disable New Reminder Button If No Title
@@ -104,6 +106,7 @@ struct ContentView: View {
                         Button(action: {self.showingSettings = true}) {
                             Image(systemName: "gearshape")
                         }
+                        .keyboardShortcut(",")
                         .sheet(isPresented: $showingSettings) {
                             NavigationStack {
                                 settings
@@ -120,60 +123,41 @@ struct ContentView: View {
                         }
                     }
                 }
-            } content: {
-                //Rest Of The Detail View Without A Selected Function
-                List {
-                    Text("Please Choose A Function...")
-                }
-                .listStyle(.plain)
-                .navigationTitle("Choose")
             } detail: {
-                VStack {
                     Image("AppsIcon")
                         .resizable()
                         .cornerRadius(25)
                         .frame(width: 150, height: 150)
-                    Text("Remember.it")
-                        .bold()
-                        .font(.title2)
-                        .padding()
-                }
             }
         }
     }
     //Settings View
     var settings: some View {
-        List {
+        Form {
             //Text For Version Number
-            HStack {
-                Text("Version")
-                Spacer()
-                Text("2.0")
+            LabeledContent("Version") {
+                Text("2.1")
             }
             //Text For Build Number
-            HStack {
-                Text("Build")
-                Spacer()
-                Text("1")
+            LabeledContent("Build") {
+                Text("6")
             }
             //Button To Send Feedback
             Button(action: {self.isShowingMailView.toggle()}) {
-                Text("Send Some Feedback")
-                    .foregroundColor(.accentColor)
+                Text("Send Feedback...")
             }
             .sheet(isPresented: $isShowingMailView) {
                 MailView(isShowing: self.$isShowingMailView, result: self.$result)
             }
         }
-        .listStyle(.plain)
     }
     //Reminders View
     var reminders: some View {
-        List {
+        Form {
             //Enter Reminder Title
             TextField("Title", text: $reminderName)
-            //Enter Reminder Notes
-            TextField("Notes", text: $reminderNotes)
+            //Date Picker To Choose Reminder Due Date
+            DatePicker("Due Date", selection: $reminderDate, displayedComponents: .date)
             //Picker To Choose Reminder Priority
             Picker("Priority", selection: $reminderPriority) {
                 Text("None")
@@ -185,10 +169,11 @@ struct ContentView: View {
                 Text("High")
                     .tag(3)
             }
-            //Date Picker To Choose Reminder Due Date
-            DatePicker("Due Date", selection: $reminderDate, displayedComponents: .date)
+            //Enter Reminder Notes
+            TextField("Notes", text: $reminderNotes)
+            //Enter Reminder URL
+            TextField("URL", text: $reminderURL)
         }
-        .listStyle(.plain)
         //New Reminder View Title
         .navigationTitle("New Reminder")
         .task {
@@ -210,11 +195,18 @@ struct ContentView: View {
                     let val = 0
                     let nextTriggerDate = Calendar.current.date(byAdding: .day, value: val, to: reminderDate)!
                     let comps = Calendar.current.dateComponents([.year, .month, .day], from: nextTriggerDate)
-                    RemindersSync().createReminder(title: reminderName, priority: reminderPriority, notes: reminderNotes, date: comps)
+                    RemindersSync().createReminder(title: reminderName, priority: reminderPriority, notes: reminderNotes, date: comps, url: reminderURL)
                 }) {
-                    Text("Done")
+                    Text("Add")
                 }
                 .disabled(newReminderDisabled)
+            }
+        }
+        .onChange(of: reminderName) { change in
+            if reminderName == "" {
+                self.newReminderDisabled = true
+            } else {
+                self.newReminderDisabled = false
             }
         }
         .onAppear() {
@@ -242,7 +234,7 @@ struct ContentView: View {
                         }
                     }
                 }
-            .listStyle(.plain)
+            .listStyle(.insetGrouped)
                 //List Of Selected Calendars
                 SelectedCalendarsList(selectedCalendars: Array(eventsRepository.selectedCalendars ?? []))
                     .padding(.vertical)
@@ -256,7 +248,7 @@ struct ContentView: View {
                 }
                 //Apply Custom Button Style
                 .buttonStyle(PrimaryButtonStyle())
-                .sheet(isPresented: $showingSheet) {
+                .sheet(isPresented: $showingSheet, onDismiss: {self.activeSheet = .calendarChooser}) {
                     if self.activeSheet == .calendarChooser {
                         CalendarChooser(calendars: self.$eventsRepository.selectedCalendars, eventStore: self.eventsRepository.eventStore)
                             .edgesIgnoringSafeArea(.all)
@@ -290,7 +282,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-//Feedback Button Send Mail View
+//Feedback Button To Send Mail View
 struct MailView: UIViewControllerRepresentable {
     @Binding var isShowing: Bool
     @Binding var result: Result<MFMailComposeResult, Error>?
@@ -324,6 +316,9 @@ struct MailView: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
         let vc = MFMailComposeViewController()
         vc.mailComposeDelegate = context.coordinator
+        vc.setToRecipients(["markhoward2005@gmail.com"])
+        vc.setSubject("Remember.it Feedback")
+        vc.setMessageBody("Rating: \nBugs: \nFeature Request: \nOther Notes: ", isHTML: false)
         return vc
     }
 

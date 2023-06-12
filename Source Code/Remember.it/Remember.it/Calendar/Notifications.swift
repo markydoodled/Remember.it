@@ -7,7 +7,7 @@
 
 import Foundation
 
-//Notify Is Event Has Changed
+//Notify If Event Has Changed
 extension Notification.Name {
     static let eventsDidChange = Notification.Name("EKEXeventsDidChange")
 }
