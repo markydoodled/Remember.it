@@ -2,6 +2,8 @@
 
 This Is A Light SwiftUI App That Acts As A Calendar Event Creator And Reader And Reminder Creator App. This Combines Two Apps Into One And Keeps All Your Important Events In One Place.
 
+THIS IS AN EXAMPLE APP THAT SHOWS EXAMPLE CODE THAT IS USED TO HELP PEOPLE UNDERSTAND HOW iOS AND SwiftUI WORKS, PLEASE EXPECT BUGS! 
+
 ## Supported Platforms
 
 - iOS 16.0+
