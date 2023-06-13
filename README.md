@@ -11,7 +11,7 @@ THIS IS AN EXAMPLE APP THAT SHOWS EXAMPLE CODE THAT IS USED TO HELP PEOPLE UNDER
 
 ## **Features**
 
-- macOS App
+- macOS (Catalyst) App
 - iOS App
 - Create Reminders
 - Create Calendar Events
